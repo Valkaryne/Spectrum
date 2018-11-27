@@ -14,4 +14,5 @@
     <string name="signin_suggest">Already have the account?</string>
     <string name="sign_in">Sign In</string>
     <string name="logout">Log Out</string>
+    <string name="reset_password">Reset Password</string>
 </resources>

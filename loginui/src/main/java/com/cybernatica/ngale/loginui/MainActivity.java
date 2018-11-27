@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private TextView tvSignUpSuggest;
+    private TextView tvSignUpSuggest, tvLoginForgot;
     private TextInputEditText etLoginEmail, etLoginPassword;
     private Button btnLoginSignin;
 
@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         btnLoginSignin = findViewById(R.id.btnLoginSignin);
         btnLoginSignin.setOnClickListener(this);
 
+        tvLoginForgot = findViewById(R.id.tvLoginForgot);
+        tvLoginForgot.setOnClickListener(this);
+
         tvSignUpSuggest = findViewById(R.id.tvSignUpSuggest);
         tvSignUpSuggest.setOnClickListener(this);
     }
@@ -67,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         switch (view.getId()) {
             case R.id.tvSignUpSuggest:
                 registerNewAccount();
+                break;
+            case R.id.tvLoginForgot:
+                resetUserPassword();
                 break;
             case R.id.btnLoginSignin:
                 signIn();
@@ -110,5 +116,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             Toast.makeText(this, "Confirm your email, please", Toast.LENGTH_SHORT).show();
             firebaseAuth.signOut();
         }
+    }
+
+    private void resetUserPassword() {
+        startActivity(new Intent(this, ResetPassword.class));
     }
 }
