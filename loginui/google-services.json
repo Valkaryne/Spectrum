@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "136635094613",
+    "firebase_url": "https://spectrum-e2111.firebaseio.com",
+    "project_id": "spectrum-e2111",
+    "storage_bucket": "spectrum-e2111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136635094613:android:799ba35b5c1fe515",
+        "android_client_info": {
+          "package_name": "com.cybernatica.ngale.loginui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136635094613-s4addqntscr0fr8e7o7se1m3t2fp2s3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgPrkUeECgHOQqwMD9fQT9ACosOUFwRGc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginUI</string>
+    <string name="user_email">User email</string>
+    <string name="user_password">Password</string>
+    <string name="forgot_password">Forgot password </string>
+    <string name="google_signin">GOOGLE</string>
+    <string name="facebook_signin">FACEBOOK</string>
+    <string name="sign_in_confirm">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup_suggest">Don\'t have an account ?</string>
+    <string name="version">Ver.: 0.01a</string>
+    <string name="confirm_user_password">Confirm Password</string>
+    <string name="sign_up_confirm">Sign Up</string>
+    <string name="signin_suggest">Already have the account?</string>
+    <string name="sign_in">Sign In</string>
+</resources>
