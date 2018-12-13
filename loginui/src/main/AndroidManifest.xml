@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.cybernatica.ngale.loginui">
 
     <application
@@ -19,6 +20,12 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".ResetPassword"></activity>
+
+        <!-- Facebook Configuration -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value"/>
     </application>
 
 </manifest>
