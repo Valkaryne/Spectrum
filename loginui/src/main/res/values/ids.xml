@@ -4,4 +4,5 @@
         Facebook App ID
     -->
     <string name="facebook_app_id">207326636863734</string>
+    <string name="fb_login_protocol_scheme">fb207326636863734</string>
 </resources>

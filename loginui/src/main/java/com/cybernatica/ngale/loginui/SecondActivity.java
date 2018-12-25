@@ -16,11 +16,11 @@ import com.google.firebase.auth.FirebaseUser;
 public class SecondActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     static final String TAG = "SecTag";
+    private static final int PL_LINK_GOOGLE = 1025;
+    private static final int PL_LINK_FACEBOOK = 1030;
 
     private TextView tvProfileEmail;
-
     private NavigationView navigationView;
-
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -51,6 +51,14 @@ public class SecondActivity extends AppCompatActivity implements NavigationView.
         switch (menuItem.getItemId()) {
             case R.id.item_logout:
                 signOut();
+                break;
+            case R.id.item_link_google:
+                startActivity(new Intent(SecondActivity.this, ProviderLinker.class)
+                        .putExtra("linker", PL_LINK_GOOGLE));
+                break;
+            case R.id.item_link_fb:
+                startActivity(new Intent(SecondActivity.this, ProviderLinker.class)
+                        .putExtra("linker", PL_LINK_FACEBOOK));
                 break;
         }
         return true;

@@ -15,7 +15,8 @@
         android:layout_gravity="start"
         android:background="#bebebe"
         app:menu="@menu/navigation_menu"
-        app:headerLayout="@layout/navigation_header"/>
+        app:headerLayout="@layout/navigation_header">
+    </android.support.design.widget.NavigationView>
 
     <ImageView
         android:layout_width="match_parent"

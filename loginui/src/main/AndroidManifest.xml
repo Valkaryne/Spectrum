@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.cybernatica.ngale.loginui">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,13 +21,15 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".ResetPassword"></activity>
+        <activity android:name=".ResetPassword" />
 
         <!-- Facebook Configuration -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"
-            tools:replace="android:value"/>
+            tools:replace="android:value" />
+
+        <activity android:name=".ProviderLinker"></activity>
     </application>
 
 </manifest>
