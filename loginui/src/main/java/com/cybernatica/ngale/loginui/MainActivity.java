@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     private static final String TAG = "LoginActivity";
     private static final int RC_GOOGLE_SIGN_IN = 9001;
+    private static final int SA_LOGIN_EMAIL = 2010;
+    private static final int SA_LOGIN_GOOGLE = 2020;
+    private static final int SA_LOGIN_FACEBOOK = 2030;
 
     private TextView tvSignUpSuggest, tvLoginForgot;
     private TextInputEditText etLoginEmail, etLoginPassword;
@@ -221,7 +224,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         if (emailFlag) {
             finish();
-            startActivity(new Intent(this, SecondActivity.class));
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            intent.putExtra("loginProvider", SA_LOGIN_EMAIL);
+            startActivity(intent);
         } else {
             Toast.makeText(this, "Confirm your email, please", Toast.LENGTH_SHORT).show();
             firebaseAuth.signOut();
@@ -245,7 +250,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         if (task.isSuccessful()) {
                             // Sign In success
                             Log.d(TAG, "signInWithCredential: success");
-                            startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                            intent.putExtra("loginProvider", SA_LOGIN_GOOGLE);
+                            startActivity(intent);
                             finish();
                         } else {
                             // If sign in fails, display a message to the user
@@ -268,7 +275,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         if (task.isSuccessful()) {
                             // Sign in success
                             Log.d(TAG, "signInWithCredential:success");
-                            startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                            intent.putExtra("loginProvider", SA_LOGIN_FACEBOOK);
+                            startActivity(intent);
                             finish();
                         } else {
                             // If sign in fails, display a message to the user

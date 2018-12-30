@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "136635094613-8acofqg70tlt0d8aqs2s8lcaq56tfsb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cybernatica.ngale.loginui",
+            "certificate_hash": "243666f968af612cb74d6c6e15053fae301cb856"
+          }
+        },
+        {
           "client_id": "136635094613-s4addqntscr0fr8e7o7se1m3t2fp2s3a.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136635094613-s4addqntscr0fr8e7o7se1m3t2fp2s3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
